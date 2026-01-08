@@ -5,6 +5,7 @@ type BearState = {
   increasePopulation: () => void
   removeAllBears: () => void
   updateBears: (count: number) => void
+  removeOneBear:()=>void
 }
 
 export const useBearStore = create<BearState>((set) => ({
@@ -13,6 +14,7 @@ export const useBearStore = create<BearState>((set) => ({
   increasePopulation: () =>
     set((state) => ({ bears: state.bears + 1 })),
 
+    removeOneBear:()=>set((state)=>({bears:state.bears-1})),
   removeAllBears: () => set({ bears: 0 }),
 
   updateBears: (count) => set({ bears: count }),
