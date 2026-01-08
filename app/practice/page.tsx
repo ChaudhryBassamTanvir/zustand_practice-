@@ -8,7 +8,11 @@ const [city, setCity]= useState()
 const {weather,loading,error,fetchWeather}=useWeatherStore()
 
   return (
-    
+    <>
+    <div>
+        hello world!
+    </div>
+    </>
   )
 }
 
