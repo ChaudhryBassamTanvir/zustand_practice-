@@ -12,14 +12,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-blue-50 flex flex-col items-center justify-center p-4 font-sans">
-      <h1 className="text-4xl font-bold text-blue-800 mb-6">Weather App 🌦️</h1>
+      <h1 className="text-5xl font-bold text-blue-800 mb-6">Weather App 🌦️</h1>
 
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
         <input
           className="px-4 py-2 rounded-lg shadow-md border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 transition w-64"
           placeholder="Enter city"
           value={city}
-          onChange={(e) => setCity(e.target.value)}
+          onChange={(e:any) => setCity(e.target.value)}
         />
         <button
           className="px-6 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition"
