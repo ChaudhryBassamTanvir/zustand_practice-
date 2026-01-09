@@ -10,7 +10,7 @@ const {weather,loading,error,fetchWeather}=useWeatherStore()
   return (
     <>
     <div>
-        hello world!
+        hello world! by Bassam Tanvir 
     </div>
     </>
   )
